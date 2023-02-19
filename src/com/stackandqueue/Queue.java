@@ -1,5 +1,5 @@
 package com.stackandqueue;
-/*Using linked list to do queue operations*/
+/*Using linked list to do dequeue operations*/
 
 public class Queue {
     public MyNode head;
@@ -15,6 +15,13 @@ public class Queue {
             tail = tail.next;                   //tail will now be the new tail
         }
         size++;
+    }
+    public void deQueue() {                   //method dequeue
+        if (head != null) {
+            head = head.next;                 //the head will be the next item because of deletion of first item
+            size--;                           //the size will decrease
+        }
+
     }
     public int size() {                     //method to check the size of stack
         return size;

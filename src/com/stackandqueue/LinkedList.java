@@ -36,7 +36,7 @@ public class LinkedList {
         MyNode currentNode = head;
         System.out.print("The stack is : ");
         while (currentNode != null){
-            System.out.printf("%s ", currentNode.data);
+            System.out.printf("The stack is %s ", currentNode.data);
             currentNode= currentNode.next;
         }
     }
